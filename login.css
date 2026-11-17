@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(
+        135deg,
+        #312e81,
+        #6d28d9,
+        #a855f7
+    );
+    padding: 20px;
+}
+/* =========================
+   LOGIN CONTAINER
+========================= */
+.login-container {
+    width: 100%;
+    max-width: 450px;
+}
+.login-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.25);
+}
+/* =========================
+   HEADING
+========================= */
+.login-box h1 {
+    text-align: center;
+    color: #312e81;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.subtitle {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 30px;
+}
+/* =========================
+   INPUT
+========================= */
+.input-group {
+    margin-bottom: 20px;
+}
+.input-group label {
+    display: block;
+    color: #334155;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.input-group input {
+    width: 100%;
+    padding: 13px;
+    font-size: 16px;
+    color: #1e293b;
+    background-color: #f8fafc;
+    border: 2px solid #ddd6fe;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+.input-group input:focus {
+    border-color: #7c3aed;
+    background-color: #ffffff;
+    box-shadow:
+        0 0 8px rgba(124, 58, 237, 0.2);
+}
+/* =========================
+   ERROR MESSAGE
+========================= */
+#errorMessage {
+    min-height: 20px;
+    text-align: center;
+    color: #dc2626;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+/* =========================
+   LOGIN BUTTON
+========================= */
+.login-box button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(
+        135deg,
+        #6d28d9,
+        #9333ea
+    );
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.login-box button:hover {
+    background: linear-gradient(
+        135deg,
+        #5b21b6,
+        #7e22ce
+    );
+    transform: translateY(-2px);
+    box-shadow:
+        0 8px 20px rgba(109, 40, 217, 0.3);
+}
+/* =========================
+   DEMO LOGIN
+========================= */
+.demo-login {
+    margin-top: 25px;
+    padding: 15px;
+    background: #f5f3ff;
+    border: 1px solid #ddd6fe;
+    border-radius: 10px;
+    text-align: center;
+}
+.demo-login p {
+    color: #5b21b6;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.demo-login span {
+    display: block;
+    color: #64748b;
+    font-size: 14px;
+    margin: 4px;
+}
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 500px) {
+    .login-box {
+        padding: 25px;
+    }
+    .login-box h1 {
+        font-size: 25px;
+    }
+}

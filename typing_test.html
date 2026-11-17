@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="typing_test.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar">
+        <span id="welcomeUser">
+            Welcome
+        </span>
+        <button id="logoutBtn">
+            Logout
+        </button>
+        </div>
+        <h1>Typing Speed Test</h1>
+        <p class="subtitle">
+            Test your typing speed, accuracy and consistency
+        </p>
+        <!-- Settings -->
+        <div class="settings">
+            <label for="timeSelect">
+                Select Test Time
+            </label>
+            <select id="timeSelect">
+                <option value="1">1 Minute</option>
+                <option value="2">2 Minutes</option>
+                <option value="5" selected>5 Minutes</option>
+                <option value="10">10 Minutes</option>
+            </select>
+        </div>
+
+        <!-- Statistics -->
+        <div class="stats">
+            <div class="stat-box">
+                <h3>Time</h3>
+                <p id="time">05:00</p>
+            </div>
+            <div class="stat-box">
+                <h3>WPM</h3>
+                <p id="wpm">0</p>
+            </div>
+            <div class="stat-box">
+                <h3>Accuracy</h3>
+                <p id="accuracy">100%</p>
+            </div>
+        </div>
+
+        <!-- Paragraph -->
+
+        <div class="text-box" id="text"></div>
+
+        <!-- Typing area -->
+
+        <textarea
+            id="input"
+            placeholder="Click Start Test and begin typing..."
+            disabled>
+        </textarea>
+
+        <!-- Buttons -->
+
+        <div class="buttons">
+            <button id="startBtn">
+                Start Test
+            </button>
+            <button id="finishBtn" disabled>
+                Finish Test
+            </button>
+        </div>
+
+        <!-- Result -->
+
+        <div class="result" id="result">
+            <h2>Test Completed!</h2>
+        <div class="final-stats">
+        <div>
+            <span>WPM</span>
+            <strong id="finalWpm">0</strong>
+        </div>
+        <div>
+            <span>Accuracy</span>
+            <strong id="finalAccuracy">0%</strong>
+        </div>
+        <div>
+            <span>Characters</span>
+            <strong id="finalCharacters">0</strong>
+        </div>
+        <div>
+            <span>Time</span>
+            <strong id="finalTime">00:00</strong>
+            </div>
+        </div>
+            <button id="tryAgainBtn">
+                Try Again
+            </button>
+        </div>
+    </div>
+    <script src="typing_test.js"></script>
+</body>
+</html>
